@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/primary_dark_color</item>
+        <item name="actionBarStyle">@style/NewsAppBarStyle</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- App bar style -->
+    <style name="NewsAppBarStyle" parent="style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <!-- Remove the shadow below the app bar -->
+        <item name="elevation">0dp</item>
+    </style>
+
+    <!-- Style for a tab that displays a category name -->
+    <style name="CategoryTab" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@android:color/black</item>
+        <item name="tabSelectedTextColor">@android:color/black</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabMode">scrollable</item>
+        <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
+    </style>
+
+    <!-- Text appearance style for a category tab -->
+    <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">#A8A19E</item>
+        <!--  By default, the tab created by TabLayout sets the textAllCaps property to be true, which prevents
+        ImageSpans from being rendered. You can override this behavior by changing the tabTextAppearance property. -->
+        <!-- In this app, I am not using icons above tabs statements so no need to worry about ImageSpans -->
+        <item name="textAllCaps">false</item>
+    </style>
+
+</resources>
+
